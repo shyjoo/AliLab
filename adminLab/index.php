@@ -1,4 +1,4 @@
-<?SESSION_START():?>
+
 <?php
 // $_SESSION['token']=date("YmdHis"); //은근슬쩍 토큰생성 (아무에게도 안보여요. 단지 PHPSSID가 보일 뿐이지)
 // $_SESSION['tokensave']=$_SESSION['token']; //토큰을 다른 세션에 저장
