@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 29, 2017 at 04:10 PM
+-- Generation Time: Jun 29, 2017 at 06:45 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -40,7 +40,7 @@ CREATE TABLE `agency` (
 --
 
 INSERT INTO `agency` (`id`, `name`, `pass`, `apiNY`, `apikey`, `type`) VALUES
-(1, 'zxcv', '$2y$10$EV2LsVt9evIm60wn2rQsTOb9DWPmcKqmoZTyV58LHAjJLjVtxK5hy', '', '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'super'),
+(1, 'zxcv1', '$2y$10$EV2LsVt9evIm60wn2rQsTOb9DWPmcKqmoZTyV58LHAjJLjVtxK5hy', '', '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Shopping'),
 (2, 'abank', '$2y$10$SClQhUhuY.xf.XjNBv54c.W6XTnmU2T5o8TofMK2LejSqSAwoe8sW', '', '1bc44ae8485b142450328ee0652a1b360dd181d429b990cca3d8db9411f2a9f6', 'bank'),
 (3, 'bsoial', '$2y$10$xSK1ZER/7mJ1h7a1JKVWWu.7ncXgf0tSGd02iBt8XQYz7EM1KsM0G', '', 'a1cdc4fcfe4573cb67718c3ef4702806ba00463319da620df765c6b0e7cbfd36', 'social'),
 (4, 'r', '$2y$10$6SHjY9G6LQdupRs6sSGmSOUWWNiRjH7f7luBJ5c3lAq9dPX3QPxza', '', '09d73981e89e65e17642899daf79cf70c785d37575a596e4f31d13eda01222f9', 'social'),
@@ -56,7 +56,8 @@ INSERT INTO `agency` (`id`, `name`, `pass`, `apiNY`, `apikey`, `type`) VALUES
 (14, 'asdfg', '$2y$10$MsC9jH6JtcQr0kb8pijGyO9IPAWLUAs/Ej7APGdUgd.f9azarwSMK', '', '78099b6f0edf64d39068a1127769f9868bc22aef3ced9ade5765678afc4a4726', 'social'),
 (15, 'testbank', '$2y$10$NURqZ9ipoz.evC02S6Oq7.VmCdmZILFPQFpMRYSu01YUqlJi.MjjG', '', '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'bank'),
 (16, 'testsocial', '$2y$10$Lj5hiBEgKBQ.1d/0Bc0JB.yIli.rMOtTitKpwNOkgDNUpZTvs62LK', '', 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'social'),
-(17, 'testShopping', '$2y$10$UgBXuRvZRaMngmxRJt5PGOmJAvoAPEeHJ7PItSuvFCZ99uFNGHQWi', '', '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'shopping');
+(17, 'testShopping', '$2y$10$UgBXuRvZRaMngmxRJt5PGOmJAvoAPEeHJ7PItSuvFCZ99uFNGHQWi', '', '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'shopping'),
+(18, 'zxcv', '$2y$10$fZJ4KYB/GqN0DRdN1bAwPugGLfGCZmR.AG136U0bLoCQ5Dx1US/fa', '', '7a5f12749882351b2afa49101a4c9da77498a46a45aec0f9f2eb92a6a40f93c7', 'super');
 
 -- --------------------------------------------------------
 
@@ -130,7 +131,10 @@ INSERT INTO `Log` (`id`, `agencyName`, `queryDate`, `queryID`, `param1`, `param2
 (47, '', '2017-06-29 05:06:46a', 3, '', '', '', 301, 'Parameter Error'),
 (48, '', '2017-06-29 05:07:08a', 3, '', '', '', 301, 'Parameter Error'),
 (49, 'testsocial', '2017-06-29 05:08:26a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'Miju', 'Jang', 100, ''),
-(50, '', '2017-06-29 05:08:41a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536f', 'Miju', 'Jang', 203, 'Dosen&rsquo;t have APIKey');
+(50, '', '2017-06-29 05:08:41a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536f', 'Miju', 'Jang', 203, 'Dosen&rsquo;t have APIKey'),
+(51, 'zxcv', '2017-06-29 05:33:12p', 1, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', NULL, NULL, 100, ''),
+(52, 'zxcv', '2017-06-29 05:34:00p', 3, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jang', 100, ''),
+(53, 'zxcv', '2017-06-29 05:34:22p', 3, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jan', 205, 'Dosen&rsquo;t have Name.');
 
 -- --------------------------------------------------------
 
@@ -223,12 +227,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `agency`
 --
 ALTER TABLE `agency`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `Log`
 --
 ALTER TABLE `Log`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT for table `user`
 --

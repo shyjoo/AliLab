@@ -18,14 +18,14 @@
   // echo $pass;
   $verify = password_verify($pass, $sqlpass);
   if ($id == $sqlname && password_verify($pass, $sqlpass) == 1) {
-    $urlpath = "Location: https://shyjoo.000webhostapp.com/adminLab/adminMain.php?name=" . base64_encode($id);
+    $urlpath = "Location: http://localhost/adminLab/adminMain.php?name=" . base64_encode($id);
     header($urlpath);
     die();
   }
   else
   {
     $login_msg = "Please, login again";
-    $urlpath = "Location: https://shyjoo.000webhostapp.com/adminLab/index.php?login_msg=" . $login_msg;
+    $urlpath = "Location: http://localhost/adminLab/index.php?login_msg=" . $login_msg;
     header($urlpath);
     die();
   }
