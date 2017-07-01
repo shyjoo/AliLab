@@ -107,14 +107,27 @@ form.submit();
     <title>Ali</title>
   </head>
   <body>
+<h1>Hanson Goverment API beta</h1>
+<br>
+<br>
 
     <button name="button" onclick="location.href='/agency/agency_signup.php'">Sign up</button>
+    <br>
+    <br>
 
     <div class="add_form">
       <form name="form_Signin" action="index.php" method="POST">
-          <p>Name</p><input type="text" id="name" name="name"><br><br>
-          <p>Password</p><input id="userPsw" name="userPsw" type="password"><br>
-          <input type="button" value="Sign In" onclick="check()"></div>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" name="name"></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input id="userPsw" name="userPsw" type="password"></td>
+          </tr>
+        </table>
+          <input type="button" value="Sign In" onclick="check()">
       </form>
    </div>
 

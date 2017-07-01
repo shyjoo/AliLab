@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!isset($_SESSION['is_login']))
+{
+    header('Location: ./index.php');
+}
+
 $agencyname = base64_decode($_GET["name"]);
 $agencytype = base64_decode($_GET["type"]);
 $agencyapikey = $_GET["apikey"];
