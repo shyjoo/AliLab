@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 29, 2017 at 06:45 PM
+-- Generation Time: Jul 05, 2017 at 09:05 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -134,7 +134,30 @@ INSERT INTO `Log` (`id`, `agencyName`, `queryDate`, `queryID`, `param1`, `param2
 (50, '', '2017-06-29 05:08:41a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536f', 'Miju', 'Jang', 203, 'Dosen&rsquo;t have APIKey'),
 (51, 'zxcv', '2017-06-29 05:33:12p', 1, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', NULL, NULL, 100, ''),
 (52, 'zxcv', '2017-06-29 05:34:00p', 3, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jang', 100, ''),
-(53, 'zxcv', '2017-06-29 05:34:22p', 3, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jan', 205, 'Dosen&rsquo;t have Name.');
+(53, 'zxcv', '2017-06-29 05:34:22p', 3, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jan', 205, 'Dosen&rsquo;t have Name.'),
+(54, '', '2017-07-01 03:13:34a', 5, '', '', '', 301, 'Parameter Error'),
+(55, 'zxcv1', '2017-07-01 03:19:37a', 5, '4f304ee2c28d65ba87dfdeddc0b5c972cafcdcd7fa64d08fe2d7eb69c152d51c', 'Miju', 'Jang', 208, 'Only Shopping can update Product purcharsed'),
+(56, 'testShopping', '2017-07-01 03:20:28a', 5, '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'Miju', 'Jang', 100, ''),
+(57, 'testShopping', '2017-07-01 03:21:04a', 5, '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'Miju', 'Jang', 100, ''),
+(58, 'testbank', '2017-07-01 03:28:21a', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(59, 'testbank', '2017-07-01 03:28:42a', 2, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(60, 'testsocial', '2017-07-01 03:30:57a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'Miju', 'Jang', 100, ''),
+(61, 'testsocial', '2017-07-01 03:45:31a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'Miju', 'Jang', 100, ''),
+(62, 'testbank', '2017-07-01 03:45:42a', 4, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(63, '', '2017-07-01 03:47:41a', 4, '', '', '', 301, 'Parameter Error'),
+(64, 'testShopping', '2017-07-01 03:48:55a', 5, '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'Miju', 'Jang', 100, ''),
+(65, 'testbank', '2017-07-01 10:32:37p', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(66, 'testbank', '2017-07-01 10:36:13p', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(67, 'testbank', '2017-07-01 11:31:19p', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(68, 'testbank', '2017-07-02 12:05:25a', 2, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(69, 'testbank', '2017-07-02 02:43:49a', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(70, 'testbank', '2017-07-02 02:44:39a', 2, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(71, 'testsocial', '2017-07-02 03:20:24a', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'Miju', 'Jang', 100, ''),
+(72, 'testbank', '2017-07-02 03:40:40a', 4, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(73, 'testShopping', '2017-07-02 03:53:50a', 5, '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8', 'Miju', 'Jang', 100, ''),
+(74, 'testbank', '2017-07-05 06:04:31p', 1, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', NULL, NULL, 100, ''),
+(75, 'testbank', '2017-07-05 06:04:36p', 2, '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967', 'Miju', 'Jang', 100, ''),
+(76, 'testsocial', '2017-07-05 06:04:40p', 3, 'b17ada736691f36aacbf89d425052ce74422a10744912b09332568be874536fc', 'Miju', 'Jang', 100, '');
 
 -- --------------------------------------------------------
 
@@ -185,7 +208,7 @@ INSERT INTO `user` (`id`, `firstName`, `sin`, `lastName`, `state`, `birthDay`, `
 (25, 'Geenu', '418 865 630', 'Mathai', 'in', '11/5/1995', NULL, NULL, NULL, ''),
 (26, 'Vikas', '343 693 586', 'Kumar', 'in', '11/19/1936', NULL, NULL, NULL, ''),
 (27, 'Santosh', '583 130 059', 'Konakanchi', 'in', '6/4/1970', NULL, NULL, NULL, ''),
-(28, 'Miju', '644 449 712', 'Jang', 'in', '11/25/1935', NULL, 'zxcv', '2017-06-29 05:03:12a', 'bad'),
+(28, 'Miju', '644 449 712', 'Jang', 'in', '11/25/1935', '60', 'testShopping', '2017-07-02 03:53:50a', 'Good'),
 (29, 'Navdip', '166 523 902', 'Dolla', 'in', '7/6/1952', NULL, NULL, NULL, ''),
 (30, 'Parasmani', '448 656 942', 'Dhillon', 'in', '1/25/1997', NULL, NULL, NULL, ''),
 (31, 'Pierluigi', '095 540 936', 'Stasio', 'in', '1/1/1976', NULL, NULL, NULL, ''),
@@ -232,7 +255,7 @@ ALTER TABLE `agency`
 -- AUTO_INCREMENT for table `Log`
 --
 ALTER TABLE `Log`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 --
 -- AUTO_INCREMENT for table `user`
 --
