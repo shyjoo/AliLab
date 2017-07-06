@@ -1,6 +1,6 @@
 <?php
 //API Key testshopping
-$url = 'http://localhost/AliAPI/updateProd_purchased.php?APIKey=' . '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8&FirstName=Miju&LastName=Jang&PP=100';
+$url = 'http://localhost/AliAPI/updateAddressAndBalance.php?APIKey=' . '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967&FirstName=Miju&LastName=Jang&Address=35%20Bales%20Ave.%20Toronto,%20Canada&Balance=400,000';
 $json = file_get_contents($url);
 
   $obj = json_decode($json, true);

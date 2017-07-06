@@ -1,6 +1,6 @@
 <?php
-//API Key testbank
-$url = 'http://localhost/AliAPI/updateCredit.php?APIKey=' . '918b247bd75322553d9036b998d1637e706b1fbe0015529ded9b1d55b2a68967&FirstName=Miju&LastName=Jang&Credit=Good';
+//API Key testshopping
+$url = 'http://localhost/AliAPI/updateAnnualInfo.php?APIKey=' . '28aece4f8f8643c39a0d6dc0e8f95e717f2117b42ac20835ca211ef85d112ed8&Year=0002&Purcharse=100,000&UserCount=1,000';
 $json = file_get_contents($url);
 
   $obj = json_decode($json, true);
