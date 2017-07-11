@@ -19,11 +19,11 @@ $agencyapikey = $_GET["apikey"];
     <div class="navi_menu">
 
     </div>
-    <h2><?php echo $agencyname ?></h2>
+    <h2> Hello, <?php echo $agencyname ?></h2>
     <br>
-    <?php echo $agencytype ?>
+    Agency Type : <?php echo $agencytype ?>
     <br>
-    <?php echo $agencyapikey ?>
+    APIKey : <?php echo $agencyapikey ?>
 
   </body>
 </html>

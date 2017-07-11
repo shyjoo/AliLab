@@ -5,7 +5,7 @@ if (isset($_POST["name"])&& isset($_POST["userPsw"]))
   $pass = password_hash($_POST["userPsw"],PASSWORD_BCRYPT);
   $type = base64_encode($_POST["type"]);
 
-$url = 'http://localhost/AliAPI/registeAgency.php?name=' . $name . '&pass=' . $pass . '&type=' . $type;
+$url = 'http://lilyfactory.net/AliAPI/registeAgency.php?name=' . $name . '&pass=' . $pass . '&type=' . $type;
 $json = file_get_contents($url);
 
   $obj = json_decode($json, true);
@@ -16,7 +16,7 @@ $json = file_get_contents($url);
     $Name = base64_encode($obj['Name']);
     $Type = base64_encode($obj['Type']);
     $APIKey = $obj['APIKey'];
-      $urlpath = "Location: ../agency/signup_result.php?name=" . $Name . "&type=" . $Type . "&apikey=" . $APIKey;
+      $urlpath = "Location: signup_result.php?name=" . $Name . "&type=" . $Type . "&apikey=" . $APIKey;
       header($urlpath);
       die();
   }
@@ -112,6 +112,7 @@ form.submit();
     <title></title>
   </head>
   <body>
+    <h1>Sign up</h1>
     <form class="adminLogin" action="agency_signup.php" method="post" name="form_Signup">
       <table>
         <tr>

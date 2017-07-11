@@ -4,7 +4,7 @@ if (isset($_POST["name"]) && isset($_POST["userPsw"]))
   $name = base64_encode($_POST["name"]);
   $pass = base64_encode($_POST["userPsw"]);
 
-$url = 'http://localhost/AliAPI/loginAgency.php?name=' . $name . '&pass=' . $pass;
+$url = 'http://lilyfactory.net/AliAPI/loginAgency.php?name=' . $name . '&pass=' . $pass;
 $json = file_get_contents($url);
 
   $obj = json_decode($json, true);
@@ -18,7 +18,7 @@ $json = file_get_contents($url);
     $Name = base64_encode($obj['Name']);
     $Type = base64_encode($obj['Type']);
     $APIKey = $obj['APIKey'];
-      $urlpath = "Location: ../agency/index.php?name=" . $Name . "&type=" . $Type . "&apikey=" . $APIKey;
+      $urlpath = "Location: agency/index.php?name=" . $Name . "&type=" . $Type . "&apikey=" . $APIKey;
       header($urlpath);
       die();
   }

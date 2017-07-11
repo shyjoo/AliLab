@@ -6,6 +6,7 @@ $agencyapikey = hash('sha256', $agencyname . $agencytype);
 
 //$agencycon = $_GET["con"];
 //echo $agencyname . "  :  " . $agencypass . "  :  " . $agencyapikey;
+
 require 'APIcon.php';
 
 if (!isset($resultObj))
@@ -20,7 +21,7 @@ if (!$DBerror) {
   if($result){
       $row = $result->fetch();
       if ($row == 0) {
-        $sql = "INSERT INTO agency (name, pass, apikey, type) VALUES ('". $agencyname . "','" . $agencypass . "', '" . $agencyapikey . "','" . $agencytype . "')";
+        $sql = "INSERT INTO agency (name, pass, apikey, apiNY, type) VALUES ('". $agencyname . "','" . $agencypass . "', '" . $agencyapikey . "','Y', '" . $agencytype . "')";
         $con->exec($sql);
 
         $resultObj->ErrorCode = 100;
