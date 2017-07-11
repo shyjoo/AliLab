@@ -1,6 +1,6 @@
+
 <?php
-//set folder
-$folder = 'userImg/'
+  include('con.php');
  ?>
 <!DOCTYPE html>
 <html>
@@ -10,20 +10,40 @@ $folder = 'userImg/'
   </head>
   <body>
       <div class="">
-        <h1>Sign up</h1>
-        <form enctype="multipart/form-data" action="signup.php" method="POST">
-        <input name="ImgInput" class="input" type="file" id="ImgInput" />
-          <input type="text" name="userID" value="" placeholder="User ID">
-          <br>
-          <input type="text" name="userName" value="" placeholder="User Full Name">
-          <br>
-          <input type="password" name="pass" value="" placeholder="Password">
-          <br>
-          <input type="password" name="confirmPass" value="" placeholder="Confirm Password">
-          <br>
-          <br>
-          <input type="submit" name="submit" value="Sign up">
+        <h1>Register</h1>
+        <form enctype="multipart/form-data" action="register.php" method="POST">
+          <table>
+            <tr>
+              <td>First Name</td>
+              <td><input type="text" name="firstName" value="" placeholder="First Name"></td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td><input type="text" name="lastName" value="" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+              <td>Sin Number</td>
+              <td><input type="text" name="sinNum" value="" placeholder="Sin Number"></td>
+            </tr>
+            <tr>
+              <td>Birthday</td>
+              <td><input type="text" name="birthDay" value="" placeholder="Birth Day"></td>
+            </tr>
+            <tr>
+              <td>State</td>
+              <td>
+                <input type="checkbox" name="stateIn" value="In">In<br>
+                <input type="checkbox" name="stateOut" value="Out">Out<br>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><input type="submit" value="Submit" name="btnsave"></td>
+            </tr>
+          </table>
         </form>
       </div>
+      <a href="list.php">Back</a><br /><br />
   </body>
 </html>

@@ -13,8 +13,8 @@
       <h1>ADMIN</h1>
       <div class="menu">
         <h2>information</h2>
-        <a href="#">Registe</a>
-        <a href="#">List</a>
+        <a href="resigte.php">Registe</a>
+        <a href="list.php">List</a>
         <hr>
         <h2>Agency</h2>
         <a href="#">List</a>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="content">
-      
+
     </div>
     <div class="footer">
 
