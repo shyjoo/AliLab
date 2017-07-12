@@ -1,49 +1,20 @@
-
-<?php
-  include('con.php');
- ?>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Add</title>
   </head>
   <body>
-      <div class="">
-        <h1>Register</h1>
-        <form enctype="multipart/form-data" action="register.php" method="POST">
-          <table>
-            <tr>
-              <td>First Name</td>
-              <td><input type="text" name="firstName" value="" placeholder="First Name"></td>
-            </tr>
-            <tr>
-              <td>Last Name</td>
-              <td><input type="text" name="lastName" value="" placeholder="Last Name"></td>
-            </tr>
-            <tr>
-              <td>Sin Number</td>
-              <td><input type="text" name="sinNum" value="" placeholder="Sin Number"></td>
-            </tr>
-            <tr>
-              <td>Birthday</td>
-              <td><input type="text" name="birthDay" value="" placeholder="Birth Day"></td>
-            </tr>
-            <tr>
-              <td>State</td>
-              <td>
-                <input type="checkbox" name="stateIn" value="In">In<br>
-                <input type="checkbox" name="stateOut" value="Out">Out<br>
-              </td>
-            </tr>
-
-            <tr>
-              <td></td>
-              <td><input type="submit" value="Submit" name="btnsave"></td>
-            </tr>
-          </table>
-        </form>
-      </div>
-      <a href="list.php">Back</a><br /><br />
+    <form class="add" action="register_result.php" method="post">
+      <label for="fName">First Name : </label><input type="text" name="fName" value="">
+      <br>
+      <label for="lName">Last Name : </label><input type="text" name="lName" value="">
+      <br>
+      <label for="sinNum">Sin Number : </label><input type="text" name="sinNum" value="">
+      <br>
+      <label for="birthDay">BirthDay : </label><input type="text" name="birthDay" value="">
+      <br>
+      <input type="submit" name="btnSubmit" value="ADD">
+    </form>
   </body>
 </html>
