@@ -26,7 +26,7 @@ $result = $conn->query($sql);
     <title>People List</title>
   </head>
   <body>
-    <button type="button" name="button" onclick="location.href='add.php'">Add</button>
+    <button type="button" name="button" onclick="location.href='resigte.php'">Add</button>
 <br>
 
     <?php
