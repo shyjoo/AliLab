@@ -1,7 +1,9 @@
 # Hanson Goverment PHP
 
-Cambridan at Hanson Mobile Application Team Project
+<h4>Cambridan at Hanson Mobile Application Team Project</h4>
 Team Member
-Miju Jang 
-Pyosang Park
-Hao Wo
+<ul>
+<li>Miju Jang</li>
+<li>Pyosang Park</li>
+<li>Hao Wo</li>
+</ul>
