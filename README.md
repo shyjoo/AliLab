@@ -1,6 +1,6 @@
 # Hanson Goverment PHP
 
-<h4>Cambridan at Hanson Mobile Application Team Project</h4>
+<h4>Cambridan@Hanson Mobile Application Team Project</h4>
 Team Member
 <ul>
 <li>Miju Jang</li>
